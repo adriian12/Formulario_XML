@@ -38,6 +38,12 @@ window.onload = function() {
         return false;
     }
 
+    formElement = document.getElementById('comenzar');
+    formElement.onsubmit = function() {
+        mostrar();
+        return false;
+    }
+
     window.onmousedown = function(e) {
         var el = e.target;
         if (el.tagName.toLowerCase() == 'option' && el.parentNode.hasAttribute('multiple')) {
