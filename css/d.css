@@ -25,7 +25,8 @@ input[type="email"]:hover {
 
 #inicio,
 #content,
-#resultados {
+#resultadosDiv,
+#resultadoTotal {
     background-image: url("../img/fondo2.jpg");
 }
 
@@ -103,8 +104,13 @@ h4 {
     display: none;
 }
 
+#content .logo {
+    width: 15%;
+    height: 15%;
+}
+
 #content h1 {
-    margin-top: 5%;
+    margin-top: 3%;
 }
 
 #info {
@@ -158,18 +164,33 @@ form {
 
 /*-----------------------------------------------CORRECION------------------------------------------*/
 
-#resultadosDiv {
-    width: 50%;
+#resultadoTotal {
+    width: 40%;
     background-color: #fff;
     padding: 3%;
     margin: 0 auto;
-    margin-top: 1%;
     border-radius: 10px 10px 10px 10px;
     -moz-border-radius: 10px 10px 10px 10px;
     -webkit-border-radius: 10px 10px 10px 10px;
-    border: 3px solid black;
+    border: 3px 3px 0 3px solid black;
     display: none;
 }
 
+#resultadosDiv {
+    width: 40%;
+    background-color: #fff;
+    padding: 3%;
+    margin: 0 auto;
+    margin-top: -1%;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0 3px 3px 3px solid black;
+    display: none;
+}
 
-/*--------------------------------------------CUENTA ATRÁS-------------------------------------------------*/
+#resultadoTotal p {
+    padding: 0;
+    text-align: center;
+    font-size: 5em;
+}

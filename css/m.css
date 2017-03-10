@@ -1,7 +1,105 @@
-body,html{margin:0px}
-body{width:96%;padding-left:2%;padding-right:2%}
-body,input,select,label{font-size:5vw}
-h3{font-size:7vw}
-select{width:80%}
-input[type=checkbox]{width:5%;zoom:1.5}
-form{background-color:aliceblue;padding:1%}
+body,
+html {
+    margin: -2px
+}
+
+body {
+    width: 96%;
+    padding-left: 2%;
+    padding-right: 2%
+}
+
+body,
+input,
+select,
+label {
+    font-size: 5vw
+}
+
+h3 {
+    font-size: 7vw
+}
+
+select {
+    width: 80%
+}
+
+input[type=checkbox] {
+    width: 5%;
+    zoom: 1.5
+}
+
+form {
+    padding: 1%
+}
+
+#inicio,
+#content,
+#resultadosDiv {
+    background-image: url("../img/fondo2.jpg");
+}
+
+
+/*-----------------------------------INICIO---------------------------------------------------*/
+
+#inicio {
+    position: absolute;
+}
+
+#inicio img {
+    width: 20%;
+}
+
+#inicio h1 {
+    width: 80%;
+    margin: 1% 0 0 2%;
+    font-size: 1em;
+    float: right;
+    font-family: Helvetica;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+#header {
+    width: 100%;
+}
+
+
+/*-----------------------------------CONTENIDO-----------------------------------------------*/
+
+#content {
+    width: 50%;
+    background-color: #fff;
+    padding: 3%;
+    margin: 0 auto;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 3px solid black;
+    display: none;
+}
+
+
+/*-------------------------------------RESULTADO--------------------------------------*/
+
+#resultadosDiv {
+    width: 50%;
+    background-color: #fff;
+    padding: 3%;
+    margin: 0 auto;
+    margin-top: 1%;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 3px solid black;
+    display: none;
+}
+
+#resultadoTotal .logo {
+    width: 25%;
+    height: 25;
+}
+
+#resultadoTotal h1 {
+    height: 60%;
+    font-size: 1vw;
+}
