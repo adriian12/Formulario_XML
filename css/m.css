@@ -5,15 +5,19 @@ html {
 
 body {
     width: 96%;
-    padding-left: 2%;
-    padding-right: 2%
+    margin: 0 auto;
 }
 
 body,
 input,
 select,
 label {
-    font-size: 5vw
+    font-family: helvetica;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover {
+    background-color: #fffdcf;
 }
 
 h3 {
@@ -35,7 +39,8 @@ form {
 
 #inicio,
 #content,
-#resultadosDiv {
+#resultadosDiv,
+#resultadoTotal {
     background-image: url("../img/fondo2.jpg");
 }
 
@@ -44,62 +49,100 @@ form {
 
 #inicio {
     position: absolute;
+    display: block;
 }
 
-#inicio img {
+#inicio .logo {
     width: 20%;
+    margin-top: 5%;
 }
 
 #inicio h1 {
-    width: 80%;
-    margin: 1% 0 0 2%;
+    width: 70%;
+    margin: 12% 0 0 2%;
     font-size: 1em;
     float: right;
-    font-family: Helvetica;
     text-shadow: 1px 1px 1px #000000;
 }
 
 #header {
     width: 100%;
+    border-bottom: 2px solid #000;
+    padding-bottom: 2%;
+    font-family: Helvetica;
 }
 
 
 /*-----------------------------------CONTENIDO-----------------------------------------------*/
 
 #content {
-    width: 50%;
-    background-color: #fff;
-    padding: 3%;
-    margin: 0 auto;
-    border-radius: 10px 10px 10px 10px;
-    -moz-border-radius: 10px 10px 10px 10px;
-    -webkit-border-radius: 10px 10px 10px 10px;
-    border: 3px solid black;
+    width: 100%;
     display: none;
 }
 
+#content .logo {
+    width: 25%;
+    margin: 5% 0 0 5%;
+}
 
-/*-------------------------------------RESULTADO--------------------------------------*/
+#content h1 {
+    width: 70%;
+    font-size: 1em;
+    margin-top: 14%;
+    text-align: center;
+    float: right;
+    text-shadow: 1px 1px 1px #000000;
+}
 
-#resultadosDiv {
-    width: 50%;
-    background-color: #fff;
+.imagenUno {
+    width: 100%;
+}
+
+#info {
+    padding-bottom: 3%;
+    border-bottom: 1px solid black;
+}
+
+
+/*-----------------------------------------------CORRECION------------------------------------------*/
+
+#resultadoTotal {
+    width: 99%;
     padding: 3%;
     margin: 0 auto;
-    margin-top: 1%;
     border-radius: 10px 10px 10px 10px;
     -moz-border-radius: 10px 10px 10px 10px;
     -webkit-border-radius: 10px 10px 10px 10px;
-    border: 3px solid black;
+    border: 3px 3px 0 3px solid black;
     display: none;
 }
 
 #resultadoTotal .logo {
     width: 25%;
-    height: 25;
+    margin: 5% 0 0 5%;
 }
 
 #resultadoTotal h1 {
-    height: 60%;
-    font-size: 1vw;
+    width: 70%;
+    font-size: 1em;
+    margin-top: 14%;
+    text-align: center;
+    float: right;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+#resultadosDiv {
+    width: 99%;
+    padding: 3%;
+    margin: 0 auto;
+    margin-top: -3%;
+    border-radius: 10px 10px 10px 10px;
+    border: 0 3px 3px 3px solid black;
+    display: none;
+}
+
+#resultadoTotal p {
+    padding: 0;
+    text-align: center;
+    font-size: 5em;
 }

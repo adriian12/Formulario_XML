@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>-->
 <html>
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/favicon.png" />
     <link rel='stylesheet' media='screen and (min-width: 961px)' href='css/d.css'>
     <link rel='stylesheet' media='screen and (max-width: 960px)' href='css/m.css'>
     <script src='js/preguntas.js'></script>
@@ -30,7 +31,7 @@
                 <label class="email">Correo electrónico:</label><br>
                 <input id="email" type="email" placeholder="Ej: email@email.com" minlength="12" required><br><br>
                 <input id="reset" type="reset" value="Borrar">
-                <input id="acceder" type="submit" value="Comenzar" onclick="mostrar()">
+                <input id="acceder" type="button" value="Comenzar" onclick="mostrar()">
             </div>
         </form>
     </div>
@@ -77,7 +78,7 @@
             <br><br><br>
 
             <h3 id='tituloInput2'></h3>
-            <input id="text" type="text" size="25" placeholder="Ej: fondo-color">
+            <input id="text2" type="text" size="25" placeholder="Ej: fondo-color">
             <br><br><br>
 
             <h3 id='tituloSelect2'></h3>
@@ -100,17 +101,17 @@
 
         </form>
     </div>
-
-    <div id='resultadosDiv'>
+    <div id='resultadoTotal'>
         <div id="header">
             <img class="logo" src="img/logo.png" alt="">
-            <h1>UNIVERSIDAD DE<br> ARTES GRÁFICAS</h1>
+            <h1>UNIVERSIDAD DE ARTES GRÁFICAS</h1>
         </div>
-    </div>
-    <div id='resultadoTotal'>
-
         <p id="respuestas"></p>
     </div>
+    <div id='resultadosDiv'>
+
+    </div>
+
 
 </body>
 

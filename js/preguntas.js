@@ -37,11 +37,6 @@ window.onload = function() {
         presentarNota();
         return false;
     }
-    formElement = document.getElementById('comenzar');
-    formElement.onsubmit = function() {
-        mostrar();
-    }
-
 
     window.onmousedown = function(e) {
         var el = e.target;
@@ -63,7 +58,6 @@ window.onload = function() {
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             gestionarXml(this);
-            tiempo();
         }
     };
     xhttp.open("GET", "xml/preguntas.xml", true);
@@ -359,6 +353,7 @@ function corregirText2() {
 }
 
 
+
 //**********	CORECCION SELECT	**********
 
 function corregirSelect() {
@@ -376,6 +371,7 @@ function corregirSelect2() {
         nota += 1;
     } else darRespuestaHtml("7ª pregunta: 0 puntos");
 }
+
 
 
 //**********	CORECCION CHECKBOX	**********
@@ -428,6 +424,7 @@ function corregirCheckbox2() {
         darRespuestaHtml("8ª pregunta: " + notaCheckbox + " puntos")
     } else darRespuestaHtml("8ª pregunta: " + notaCheckbox + " punto")
 }
+
 
 
 //**********	CORECCION RADIO	**********
@@ -525,12 +522,14 @@ function corregirMultiple2() {
     } else darRespuestaHtml("10ª pregunta: 1 punto")
 }
 
+
 //****************************************************************************************************
 //Gestionar la presentación de las respuestas
 function darRespuestaHtml(r) {
     document.getElementById('content').style.display = "none";
     document.getElementById('inicio').style.display = "none";
     document.getElementById('resultadosDiv').style.display = "block";
+    document.getElementById('resultadoTotal').style.display = "block";
     var p = document.createElement("p");
     var node = document.createTextNode(r);
     p.appendChild(node);
@@ -538,11 +537,14 @@ function darRespuestaHtml(r) {
 }
 
 function tituloCorreccion() {
-    darRespuestaHtml("Puntuación obtenida por pregunta:");
+    darRespuestaHtml("Puntuación: ");
 }
 
 function presentarNota() {
-    darRespuestaTotal("Puntuación total: " + nota.toFixed(2));
+    var p = document.createElement("p");
+    var node = document.createTextNode("Tu nota es: " + nota.toFixed(2));
+    p.appendChild(node);
+    document.getElementById("resultadoTotal").appendChild(p);
 }
 //	inicializar la corrección
 function inicializar() {
