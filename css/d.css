@@ -18,6 +18,11 @@ label {
     font-family: helvetica;
 }
 
+input[type="text"]:hover,
+input[type="email"]:hover {
+    background-color: #fffdcf;
+}
+
 #inicio,
 #content,
 #resultados {
@@ -73,7 +78,13 @@ h4 {
     float: right;
 }
 
+#reset {
+    width: 40%;
+    float: left;
+}
+
 #acceder {
+    width: 55%;
     float: right;
 }
 
@@ -141,7 +152,7 @@ form {
 }
 
 .imagenDos {
-    width: 50%;
+    width: 30%;
 }
 
 

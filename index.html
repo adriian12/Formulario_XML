@@ -20,16 +20,17 @@
             <h4>Introduce los datos para comenzar</h4>
             <div id="izquierda">
                 <label class="nombre">Nombre:</label><br>
-                <input id="nombre" type="text" placeholder="Ej: Miguel Angel"><br><br>
+                <input id="nombre" type="text" placeholder="Ej: Miguel Angel" minlength="3" required><br><br>
                 <label class="apellidos">Apellidos:</label><br>
-                <input id="apellidos" type="text" placeholder="Ej: Urbina Pons"><br><br>
+                <input id="apellidos" type="text" placeholder="Ej: Urbina Pons" minlength="3" required><br><br>
             </div>
             <div id="derecha">
                 <label class="dni">DNI / NIE:</label><br>
-                <input id="dni" type="text" placeholder="Ej: 41234567A"><br><br>
+                <input id="dni" type="text" placeholder="Ej: 41234567A" minlength="9" required><br><br>
                 <label class="email">Correo electrónico:</label><br>
-                <input id="email" type="email" placeholder="Ej: email@email.com"><br><br>
-                <input id="acceder" type="button" value="Comenzar" onclick="mostrar()">
+                <input id="email" type="email" placeholder="Ej: email@email.com" minlength="12" required><br><br>
+                <input id="reset" type="reset" value="Borrar">
+                <input id="acceder" type="submit" value="Comenzar" onclick="mostrar()">
             </div>
         </form>
     </div>
@@ -106,7 +107,8 @@
             <h1>UNIVERSIDAD DE<br> ARTES GRÁFICAS</h1>
         </div>
     </div>
-    <div id='resultadoTotal' style='display: none'>
+    <div id='resultadoTotal'>
+
         <p id="respuestas"></p>
     </div>
 
