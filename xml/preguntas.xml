@@ -27,7 +27,7 @@ Mucho ojo en el campo "answer", el número de la respuesta empieza a contar de 0
 
  <question id='jams003'>
   <type>multiple</type>
-  <title>¿Que versiones a tenido HTML?</title>
+  <title>¿Que versiones ha tenido HTML?</title>
   <option>Version 2.0</option>
   <option>Version 6.3</option>
   <option>Version 4.1</option>
